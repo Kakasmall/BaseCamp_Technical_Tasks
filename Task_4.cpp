@@ -1,3 +1,4 @@
+// Task_4
 // Password Validator
 #include <iostream>
 using namespace std;
@@ -21,15 +22,18 @@ int main()
 
   std::cin >> password;
   // Reading the password entered by a user
+  // And assigned it to password as string
 
   int l = password.length(),i;
   // Initializing the length of password in Integer Types as l
 
-  for(i=0; i<l; i++)
+  // FUNCTION STARTS HERE
+  for(i = 0; i < l; i++)
     // For loop, the  entry loop as i equals  to zero i=0
     // Condition as i is less than l, i<l
-    // Loop updater as i plus plus, i++
+    // Loop updater as i is incrementing by 1
   {
+    // CONDITIONAL STATEMENT STARTS HERE
     if(islower(password[i]))
       LowAlp=1;
       // If the password entered by the user is in Lower Case, then its LowAlp which equals to one LowAlp=1
@@ -66,4 +70,4 @@ int main()
 
   return 0;
 }
-// This is end of the code
+// END OF THE CODES HERE
